@@ -1,0 +1,73 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas Name="rooCanvas" Background="LightGray" Width="600" Height="400" MouseLeftButtonDown="rooCanvas_MouseLeftButtonDown">
+            <Path Fill="LightBlue" Stroke="Black" StrokeThickness="2">
+                <Path.Data>
+                    <RectangleGeometry Rect="98,75,200,150"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Fill="LightGreen" Stroke="Black" StrokeThickness="2">
+                <Path.Data>
+                    <RectangleGeometry Rect="300,100,200,150"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="5">
+                <Path.Data>
+                    <LineGeometry StartPoint="299,145" EndPoint="299,205"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="5">
+                <Path.Data>
+                    <LineGeometry StartPoint="500,170" EndPoint="500,230"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <Path Fill="Aquamarine" Stroke="Black" StrokeThickness="2">
+                <Path.Data>
+                    <RectangleGeometry Rect="300,250,200,150"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Fill="Brown" Stroke="Black" StrokeThickness="2">
+                <Path.Data>
+                    <RectangleGeometry Rect="98,225,200,175"></RectangleGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="5" HorizontalAlignment="Center" Canvas.Top="143.002" VerticalAlignment="Top">
+                <Path.Data>
+                    <LineGeometry StartPoint="299,145" EndPoint="299,205"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <Path Stroke="LightGreen" StrokeThickness="5" Canvas.Left="432.944" Canvas.Top="85.285" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="89.819"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <LineGeometry StartPoint="100,170" EndPoint="100,230"></LineGeometry>
+                </Path.Data>
+            </Path>
+            <TextBlock FontWeight="Bold" Canvas.Left="363" Canvas.Top="317"> 
+        Спальня <Run FontWeight="Normal">(23 m2)</Run>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Canvas.Left="151" Canvas.Top="295"> 
+Зал <Run FontWeight="Normal">(34 m2)</Run>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Canvas.Left="363" Canvas.Top="167"> 
+Коридор <Run FontWeight="Normal">(20 m2)</Run>
+            </TextBlock>
+            <TextBlock FontWeight="Bold" Canvas.Left="151" Canvas.Top="143"> 
+Кухня <Run FontWeight="Normal">(18 m2)</Run>
+            </TextBlock>
+        </Canvas>
+    </Grid>
+</Window>
